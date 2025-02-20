@@ -32,7 +32,7 @@ export const LogoTicker = () => {
               <Image src={src} alt={alt} className="flex-none h-8 w-auto" />
             ))}
             {images.map(({ src, alt }) => (
-              <Image src={src} alt={alt} className="flex-none h-8 w-auto" />
+              <Image key={alt} src={src} alt={alt} className="flex-none h-8 w-auto" />
             ))}
 
           </motion.div>
