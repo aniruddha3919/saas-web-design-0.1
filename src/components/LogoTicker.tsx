@@ -28,12 +28,13 @@ export const LogoTicker = () => {
             initial={{ translateX: 0 }}
             animate={{ translateX: "-50%" }}
             className="flex gap-16 pr-16 flex-none">
-            {images.map(({ src, alt }) => (
-              <Image src={src} alt={alt} className="flex-none h-8 w-auto" />
-            ))}
-            {images.map(({ src, alt }) => (
-              <Image key={alt} src={src} alt={alt} className="flex-none h-8 w-auto" />
-            ))}
+            {images.map(({ src, alt }, index) => (
+  <Image key={index} src={src} alt={alt} className="flex-none h-8 w-auto" />
+))}
+{images.map(({ src, alt }, index) => (
+  <Image key={`duplicate-${index}`} src={src} alt={alt} className="flex-none h-8 w-auto" />
+))}
+
 
           </motion.div>
         </div>
