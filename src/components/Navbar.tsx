@@ -14,7 +14,7 @@ export const Navbar = () => {
           <div className="border border-white border-opacity-30 h-10 w-10 inline-flex items-center justify-center rounded-lg sm:hidden">
             <MenuIcon className=" text-white" />
           </div>
-          <nav className=" flex gap-6 items-center hidden sm:flex">
+          <nav className="  gap-6 items-center hidden sm:flex">
             <a href="#" className="text-opacity-60 text-white hover:text-opacity-100">About</a>
             <a href="#" className="text-opacity-60 text-white hover:text-opacity-100">Features</a>
             <a href="#" className="text-opacity-60 text-white hover:text-opacity-100">Help</a>
